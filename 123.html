@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+    <title>Jquerry Syntax d</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('p').click(function () {
+                $(this).hide();
+            });
+
+        });
+
+        $(document).ready(function () {
+            $("#a1").click("slow", function () {
+                $('p').hide();
+            });
+            $("#v3").click("slow", function () {
+                $('p').show();
+
+            });
+
+            $("button").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <button id="a1">Hide</button>
+    <button id="v3">show</button>
+
+    <p> Hello Students!!!</p>
+    <p>BCA</p>
+    <p>DIV-A</p>
+    <button>Click to fade in boxes</button><br><br>
+
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:lightgray;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:lightsalmon;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:limegreen;"></div>
+
+</body>
+
+</html> 
